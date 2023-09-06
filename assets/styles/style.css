@@ -1,4 +1,7 @@
-:root {  
+:root { 
+  --white: #FFF;
+  --black: #000;
+
   --primary-color-turquoise: #3CDDF3;
   --primary-color-deep-lilac: #8B48BF;
 
@@ -10,6 +13,10 @@
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+/*
+  * Here we defined our specific by element with/without a class styles.
+*/
 
 header {
   display: flex;
@@ -51,7 +58,7 @@ section.hero {
   
   gap: 100px;
 
-  margin: 0 180px;
+  margin: 95px 180px;
 }
 
 section.hero div.main-description {
@@ -76,7 +83,7 @@ div.main-description h1 {
 }
 
 div.main-description h2 {
-  color: #000;
+  color: var(--black);
 
   text-align: right;
   line-height: 1.5rem;
@@ -86,8 +93,39 @@ div.main-description h2 {
   font-weight: 500;
 }
 
+section.top-advert {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-evenly;
+
+  gap: 100px;
+
+  padding: 40px 0;
+
+  background-color: var(--primary-color-deep-lilac);
+}
+
+section.top-advert div {
+  width: 450px;
+
+  color: var(--white);
+}
+
+section.top-advert div.title-advert p {
+  font-size: 35px;
+  font-weight: 700;
+  
+  line-height: 2.5rem;
+}
+
+section.top-advert div.description-advert p {
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
 /*
-  * Here we define our CSS classes.
+  * Here we define our shared CSS classes.
 */
 
 .primary-button {
@@ -98,6 +136,43 @@ div.main-description h2 {
   border-radius: 50px;
 
   cursor: pointer;
+
+  font-family: 'Be Vietnam Pro', sans-serif;
+
+  background-color: var(--primary-color-deep-lilac);
+  color: var(--secondary-color-ghost-white);
+}
+
+.primary-inverted-button {
+  width: 135px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50px;
+
+  color: var(--primary-color-deep-lilac);
+  background-color: var(--secondary-color-ghost-white);
+}
+
+.primary-opaque-button {
+  width: 135px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50px;
+
+  opacity: .70;
+
+  background-color: var(--primary-color-deep-lilac);
+  color: var(--secondary-color-ghost-white);
+}
+
+.primary-small-button {
+  width: 63px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50px;
 
   background-color: var(--primary-color-deep-lilac);
   color: var(--secondary-color-ghost-white);
