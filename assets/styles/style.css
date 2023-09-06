@@ -1,4 +1,4 @@
-:root {
+:root {  
   --primary-color-turquoise: #3CDDF3;
   --primary-color-deep-lilac: #8B48BF;
 
@@ -44,12 +44,60 @@ header button {
   color: var(--secondary-color-ghost-white);
 }
 
+section.hero {
+  display: inline-flex;
+
+  align-items: center;
+  
+  gap: 100px;
+
+  margin: 0 180px;
+}
+
+section.hero div.main-description {
+  display: flex;
+  
+  flex-direction: column;
+  align-items: flex-end; 
+  
+  gap: 28px;
+}
+
+div.main-description h1 {
+  color: var(--secondary-color-space-cadet);
+
+  text-align: right;
+  line-height: 3.5rem;
+  letter-spacing: -1.75px;
+  
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+div.main-description h2 {
+  color: #000;
+
+  text-align: right;
+  line-height: 1.5rem;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/*
+  * Here we define our CSS classes.
+*/
+
 .primary-button {
   width: 135px;
   height: 45px;
 
   border: none;
   border-radius: 50px;
+
+  cursor: pointer;
 
   background-color: var(--primary-color-deep-lilac);
   color: var(--secondary-color-ghost-white);
