@@ -8,6 +8,7 @@
   --secondary-color-ghost-white: #F9F9F9;
   --secondary-color-space-cadet: #232851;
   --secondary-color-raisin-black: #1E1E26;
+  --secondary-color-grey: #B3B2B7;
 }
 
 body {
@@ -131,7 +132,69 @@ section.bot-advert div.title-advert p {
   font-weight: 700;
 
   line-height: 3.5rem;
-} 
+}
+
+.benefits-container {
+  background-color: var(--secondary-color-ghost-white);
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 50px;
+
+  margin: 0 150px;
+  padding: 40px 0;
+}
+
+.benefit-card {
+  width: 550px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 25px;
+}
+
+article.benefit-card div.index {
+  border-radius: 30px;
+  background-color: var(--primary-color-deep-lilac);
+}
+
+article.benefit-card div.index p {
+  padding: 15px 25px;
+
+  color: var(--white);
+}
+
+.benefit-card div.description {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.benefit-card div.description h3 {
+  margin-top: 15px;
+
+  font-size: 16px;
+  font-weight: 700;
+  
+  letter-spacing: -0.24px;
+
+  color: var(--secondary-color-space-cadet);
+}
+
+.benefit-card div.description p {
+  line-height: 1.5rem;
+  letter-spacing: -0.163px;
+  
+  color: var(--secondary-color-grey);
+}
 
 /*
   * Here we define our shared CSS classes.
