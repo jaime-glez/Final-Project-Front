@@ -12,8 +12,7 @@ Los diseños se crearon con los siguientes anchos:
 ### Primario
 
 Violeta: #8B48BF
-Celeste brillante: #3CDDF3
-
+Celeste brillante: 
 ### Neutro
 
 Azul grisáceo oscuro: #1E1E26
