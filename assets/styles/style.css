@@ -15,7 +15,7 @@ body {
 }
 
 /*
-  * Here we defined our specific by element with/without a class styles.
+  * Here we define our specific styles by HTML tag.
 */
 
 header {
@@ -50,6 +50,10 @@ header button {
   background-color: var(--primary-color-deep-lilac);
   color: var(--secondary-color-ghost-white);
 }
+
+/*
+  * Here we define our specific styles by HTML tag with CSS class selector(s).
+*/
 
 section.hero {
   display: inline-flex;
@@ -93,40 +97,54 @@ div.main-description h2 {
   font-weight: 500;
 }
 
-section.top-advert {
-  display: flex;
-  
-  align-items: center;
-  justify-content: space-evenly;
-
-  gap: 100px;
-
-  padding: 40px 0;
-
-  background-color: var(--primary-color-deep-lilac);
-}
-
-section.top-advert div {
+section.advert div {
   width: 450px;
-
   color: var(--white);
 }
 
-section.top-advert div.title-advert p {
+section.top-advert {
+  padding: 40px 0;
+
+  gap: 100px;
+}
+
+div.title-advert p {
   font-size: 35px;
   font-weight: 700;
   
   line-height: 2.5rem;
 }
 
-section.top-advert div.description-advert p {
+div.description-advert p {
   font-weight: 400;
   line-height: 1.5rem;
 }
 
+section.bot-advert {
+  padding: 60px 0;
+
+  gap: 538px;
+}
+
+section.bot-advert div.title-advert p {
+  font-size: 40px;
+  font-weight: 700;
+
+  line-height: 3.5rem;
+} 
+
 /*
   * Here we define our shared CSS classes.
 */
+
+.advert {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: var(--primary-color-deep-lilac);
+}
 
 .primary-button {
   width: 135px;
@@ -139,41 +157,21 @@ section.top-advert div.description-advert p {
 
   font-family: 'Be Vietnam Pro', sans-serif;
 
-  background-color: var(--primary-color-deep-lilac);
   color: var(--secondary-color-ghost-white);
+  background-color: var(--primary-color-deep-lilac);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
-.primary-inverted-button {
-  width: 135px;
-  height: 45px;
-
-  border: none;
-  border-radius: 50px;
-
+.primary-button.inverted-colours {
   color: var(--primary-color-deep-lilac);
   background-color: var(--secondary-color-ghost-white);
 }
 
-.primary-opaque-button {
-  width: 135px;
-  height: 45px;
-
-  border: none;
-  border-radius: 50px;
-
+.primary-button.opaque {
   opacity: .70;
-
-  background-color: var(--primary-color-deep-lilac);
-  color: var(--secondary-color-ghost-white);
 }
 
-.primary-small-button {
-  width: 63px;
-  height: 42px;
-
-  border: none;
-  border-radius: 50px;
-
-  background-color: var(--primary-color-deep-lilac);
-  color: var(--secondary-color-ghost-white);
+.primary-button.small {
+  width: 60px;
+  height: 45px;
 }
