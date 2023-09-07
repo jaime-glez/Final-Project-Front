@@ -189,6 +189,7 @@ section.bot-advert div.title-advert p {
   font-weight: 700;
 
   line-height: 3.5rem;
+<<<<<<< HEAD
 }
 
 .benefits-container {
@@ -252,6 +253,9 @@ article.benefit-card div.index p {
   
   color: var(--secondary-color-grey);
 }
+=======
+} 
+>>>>>>> 37aa24d890abdc8a89ab15369719844c3f64abc0
 
 input{
   width: 201px;
