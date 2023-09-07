@@ -200,6 +200,53 @@ article.benefit-card div.index p {
   color: var(--secondary-color-grey);
 }
 
+.players h3 {
+  margin: 100px 0;
+
+  text-align: center;
+  letter-spacing: -0.392px;
+  
+  font-size: 39.214px;
+  font-weight: 700;
+  line-height: 3.75rem;
+
+  color: var(--secondary-color-space-cadet);
+}
+
+.players-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--secondary-color-ghost-white);
+}
+
+.card {
+  width: 450px;
+  height: 220px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.card img {
+  position: relative;
+  top: -25px;
+}
+
+div.players-button {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 45px;
+  margin-bottom: 180px;
+}
+
 a.footer-brand{
   color: white;
 }
