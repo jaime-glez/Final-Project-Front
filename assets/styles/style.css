@@ -253,6 +253,13 @@ article.benefit-card div.index p {
   color: var(--secondary-color-grey);
 }
 
+input{
+  width: 201px;
+  height: 44px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+}
 /*
   * Here we define our shared CSS classes.
 */
