@@ -1,4 +1,7 @@
-:root {  
+:root { 
+  --white: #FFF;
+  --black: #000;
+
   --primary-color-turquoise: #3CDDF3;
   --primary-color-deep-lilac: #8B48BF;
 
@@ -10,6 +13,10 @@
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+/*
+  * Here we define our specific styles by HTML tag.
+*/
 
 header {
   display: flex;
@@ -101,6 +108,10 @@ header button {
   color: var(--secondary-color-ghost-white);
 }
 
+/*
+  * Here we define our specific styles by HTML tag with CSS class selector(s).
+*/
+
 section.hero {
   display: inline-flex;
 
@@ -108,7 +119,7 @@ section.hero {
   
   gap: 100px;
 
-  margin: 0 180px;
+  margin: 95px 180px;
 }
 
 section.hero div.main-description {
@@ -133,7 +144,7 @@ div.main-description h1 {
 }
 
 div.main-description h2 {
-  color: #000;
+  color: var(--black);
 
   text-align: right;
   line-height: 1.5rem;
@@ -143,9 +154,54 @@ div.main-description h2 {
   font-weight: 500;
 }
 
+section.advert div {
+  width: 450px;
+  color: var(--white);
+}
+
+section.top-advert {
+  padding: 40px 0;
+
+  gap: 100px;
+}
+
+div.title-advert p {
+  font-size: 35px;
+  font-weight: 700;
+  
+  line-height: 2.5rem;
+}
+
+div.description-advert p {
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+section.bot-advert {
+  padding: 60px 0;
+
+  gap: 538px;
+}
+
+section.bot-advert div.title-advert p {
+  font-size: 40px;
+  font-weight: 700;
+
+  line-height: 3.5rem;
+} 
+
 /*
-  * Here we define our CSS classes.
+  * Here we define our shared CSS classes.
 */
+
+.advert {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: var(--primary-color-deep-lilac);
+}
 
 .primary-button {
   width: 135px;
@@ -156,6 +212,23 @@ div.main-description h2 {
 
   cursor: pointer;
 
-  background-color: var(--primary-color-deep-lilac);
+  font-family: 'Be Vietnam Pro', sans-serif;
+
   color: var(--secondary-color-ghost-white);
+  background-color: var(--primary-color-deep-lilac);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.primary-button.inverted-colours {
+  color: var(--primary-color-deep-lilac);
+  background-color: var(--secondary-color-ghost-white);
+}
+
+.primary-button.opaque {
+  opacity: .70;
+}
+
+.primary-button.small {
+  width: 60px;
+  height: 45px;
 }
