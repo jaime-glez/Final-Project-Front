@@ -275,11 +275,13 @@ div.players-button {
 }
 
 section.useful-items {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  align-items: center;
+
+  display: flex;
   gap: 45px;
+  flex-direction: row-reverse;
+  
+  justify-content: space-evenly;
 }
 
 section.useful-items div.search {
@@ -319,11 +321,27 @@ div.links ul li a {
   text-decoration: none;
 }
 
-section.social {
-  width: 100%;
+div.social-brand-box {
+  display: flex;
+  gap: 80px;
+  flex-direction: column-reverse;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.social-brand-box  div.social {
+  width: 150px;
 
   display: flex;
   justify-content: space-around;
+}
+
+section.copyright {
+  width: 69.5%;
+
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*
