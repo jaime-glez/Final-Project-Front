@@ -149,10 +149,12 @@ section.bot-advert div.title-advert p {
   align-items: center;
   justify-content: space-around;
 
-  gap: 50px;
-
-  margin: 0 150px;
+  margin: 0 500px;
   padding: 40px 0;
+}
+
+#benefits-two {
+  padding: 0 0 40px;
 }
 
 .benefit-card {
@@ -215,6 +217,7 @@ article.benefit-card div.index p {
 
 .players-container {
   display: flex;
+  flex-wrap: wrap;
 
   align-items: center;
   justify-content: center;
