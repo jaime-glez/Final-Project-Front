@@ -313,6 +313,21 @@ a.footer-brand{
   gap: 80px;
 }
 
+.update-footer div {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+.update-footer div input {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.update-footer p {
+  color: var(--white);
+}
 
 /*
   * Here we define our shared CSS classes.
