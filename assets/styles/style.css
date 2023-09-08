@@ -483,8 +483,28 @@ section.copyright {
     background-color: var(--secondary-color-space-cadet);
   }
 
-
   img.show{
     display: block;
+  }
+
+  section.useful-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.social-brand-box {
+    width: 100%;
+    
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  div.social-brand-box div.social {
+    width: 100%;
+  }
+
+  section.copyright {
+    width: 100%;
+    justify-content: center;
   }
 }
