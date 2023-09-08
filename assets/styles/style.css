@@ -372,6 +372,10 @@ a.footer-brand{
   height: 45px;
 }
 
+.desktop-hide{
+  display: none;
+}
+
 /*
   * Here we define our media rules p/screen size.
 */
@@ -438,5 +442,10 @@ a.footer-brand{
   .primary-button.primary-button.inverted-colours {
     color: var(--white);
     background-color: var(--secondary-color-space-cadet);
+  }
+
+
+  img.show{
+    display: block;
   }
 }
