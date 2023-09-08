@@ -139,54 +139,51 @@ section.bot-advert div.title-advert p {
 }
 
 .benefits-container {
+  display: flex;
+  justify-content: center;
+
   background-color: var(--secondary-color-ghost-white);
 }
 
 .benefits {
+  width: 50%;
+
   display: flex;
   flex-wrap: wrap;
   
   align-items: center;
   justify-content: space-around;
 
-  margin: 0 500px;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
-#benefits-two {
-  padding: 0 0 40px;
+article.benefit-card {
+  width: 530px;
 }
 
-.benefit-card {
-  width: 550px;
+article.benefit-card:last-child {
+  margin-top: 60px;
+}
 
+article.benefit-card div.benefit-card-header {
   display: flex;
-  align-items: flex-start;
 
-  gap: 25px;
+  align-items: center;
+
+  border-radius: 50px 0 0 50px;
 }
 
-article.benefit-card div.index {
-  border-radius: 30px;
-  background-color: var(--primary-color-deep-lilac);
-}
-
-article.benefit-card div.index p {
+div.benefit-card-header span.index {
   padding: 15px 25px;
+  margin-right: 10px;
 
   color: var(--white);
+  background-color: var(--primary-color-deep-lilac);
+
+  border-radius: 25px;
 }
 
-.benefit-card div.description {
-  display: flex;
-  flex-direction: column;
-
-  gap: 10px;
-}
-
-.benefit-card div.description h3 {
-  margin-top: 15px;
-
+div.benefit-card-header span.title {
   font-size: 16px;
   font-weight: 700;
   
@@ -195,7 +192,12 @@ article.benefit-card div.index p {
   color: var(--secondary-color-space-cadet);
 }
 
-.benefit-card div.description p {
+div.benefit-card-content {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+div.benefit-card-content p {
   line-height: 1.5rem;
   letter-spacing: -0.163px;
   
@@ -425,6 +427,30 @@ a.footer-brand{
 
   section.top-advert.advert {
     align-items: flex-start;
+  }
+
+  .benefits {
+    width: 100%;
+    padding: 0;
+  }
+
+  article.benefit-card {
+    width: auto;
+
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+  article.benefit-card div.benefit-card-header {
+    background-color: rgba(139, 72, 191, 0.30);
+  }
+
+  article.benefit-card:first-child {
+    margin-top: 65px;
+  }
+  
+  article.benefit-card:last-child {
+    margin-bottom: 65px;
   }
 
   section.bot-advert.advert {
