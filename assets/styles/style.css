@@ -241,7 +241,6 @@ div.benefit-card-content p {
 
 .card {
   width: 450px;
-  height: 220px;
 
   display: flex;
   flex-direction: column;
@@ -397,7 +396,7 @@ section.copyright {
 
 @media (max-width: 1230px) {
   header {
-    padding: 65px 100px;
+    padding: 65px;
   }
 
   section.hero {
@@ -407,6 +406,11 @@ section.copyright {
     align-items: flex-end;
 
     margin: 65px 40px 40px;
+  }
+
+  section.hero div img {
+    width: 400px;
+    height: 340px;
   }
 
   div.main-description {
@@ -442,7 +446,13 @@ section.copyright {
     background-color: var(--primary-color-turquoise);
   }
 
+  section.advert div {
+    width: auto;
+    margin: 0 20px;
+  }
+
   section.top-advert.advert {
+    padding: 60px 0;
     align-items: flex-start;
   }
 
