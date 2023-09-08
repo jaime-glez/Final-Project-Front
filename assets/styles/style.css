@@ -371,3 +371,72 @@ a.footer-brand{
   width: 60px;
   height: 45px;
 }
+
+/*
+  * Here we define our media rules p/screen size.
+*/
+
+@media (max-width: 700px) {
+  section.hero {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    margin: 65px 40px 40px;
+  }
+
+  div.main-description {
+    width: 70%;
+  }
+
+  section.top-advert div.title-advert p {
+    font-size: 36px;
+  }
+
+  .benefits {
+    margin: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .players-container {
+    margin: 0 20px;
+  }
+
+  .primary-button.opaque {
+    opacity: 1;
+  }
+
+  section.advert {
+    flex-direction: column;
+    gap: 50px;
+    
+    padding: 60px;
+
+    background-color: var(--primary-color-turquoise);
+  }
+
+  section.top-advert.advert {
+    align-items: flex-start;
+  }
+
+  section.bot-advert.advert {
+    align-items: center;
+  }
+
+  section.bot-advert .title-advert {
+    width: 325px;
+  }
+
+  section.bot-advert .title-advert p {
+    text-align: center;
+  }
+
+  .primary-button.primary-button.inverted-colours {
+    color: var(--white);
+    background-color: var(--secondary-color-space-cadet);
+  }
+}
