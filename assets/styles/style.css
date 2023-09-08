@@ -53,7 +53,19 @@ header button {
 }
 
 footer{
-  background-color: #1E1E26;
+  height: 450px;
+
+  padding: 40px 0;
+
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-around;
+  
+  color: var(--secondary-color-grey);
+  background-color: var(--secondary-color-raisin-black);
 }
 
 /*
@@ -262,73 +274,74 @@ div.players-button {
   margin-bottom: 180px;
 }
 
-a.footer-brand{
-  color: white;
-}
-
-.menu-footer{
-  display: flex;
-  height: 141.143px;
-  align-items: flex-start;
-  gap: 219px;
-  flex-shrink: 0;
-  justify-content: center;
-}
-
-.inside-menu-footer{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.inside-menu-footer li a {
-  color: #FFF;
-  font-family: 'Be Vietnam', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.footer-deep{
+section.useful-items {
   width: 100%;
+
   display: flex;
+  gap: 45px;
+  flex-direction: row-reverse;
+  
   justify-content: space-evenly;
-  align-items: center;
-  height: 247px;
 }
 
-.social-media{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 33px;
+section.useful-items div.search {
+  width: 380px;
 }
 
-.update-footer{
+div.search form {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: column;
-  gap: 80px;
-}
-
-.update-footer div {
-  display: flex;
-  justify-content: flex-end;
 
   gap: 10px;
 }
 
-.update-footer div input {
-  width: 100%;
-  border-radius: 50px;
+div.search form input {
+  flex-grow: 2;
+  border-radius: 30px;
 }
 
-.update-footer p {
+section.useful-items div.links {
+  width: 350px;
+
+  display: flex;
+  gap: 150px;
+
+  justify-content: space-around;
+}
+
+div.links ul li {
+  margin: 15px 0;
+}
+
+div.links ul li a {
   color: var(--white);
+
+  font-size: 16px;
+  font-weight: 400;
+
+  text-decoration: none;
+}
+
+div.social-brand-box {
+  display: flex;
+  gap: 80px;
+  flex-direction: column-reverse;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.social-brand-box  div.social {
+  width: 150px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+section.copyright {
+  width: 69.5%;
+
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*
@@ -369,7 +382,7 @@ a.footer-brand{
   opacity: .70;
 }
 
-.primary-button.small {
+.primary-button.small-button {
   width: 60px;
   height: 45px;
 }
@@ -382,7 +395,11 @@ a.footer-brand{
   * Here we define our media rules p/screen size.
 */
 
-@media (max-width: 700px) {
+@media (max-width: 1230px) {
+  header {
+    padding: 65px 100px;
+  }
+
   section.hero {
     display: flex;
     flex-direction: column;
@@ -470,8 +487,28 @@ a.footer-brand{
     background-color: var(--secondary-color-space-cadet);
   }
 
-
   img.show{
     display: block;
+  }
+
+  section.useful-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.social-brand-box {
+    width: 100%;
+
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  div.social-brand-box div.social {
+    width: 600px;
+  }
+
+  section.copyright {
+    width: 100%;
+    justify-content: center;
   }
 }
