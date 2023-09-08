@@ -53,7 +53,19 @@ header button {
 }
 
 footer{
-  background-color: #1E1E26;
+  height: 450px;
+
+  padding: 40px 0;
+
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-around;
+  
+  color: var(--secondary-color-grey);
+  background-color: var(--secondary-color-raisin-black);
 }
 
 /*
@@ -262,73 +274,56 @@ div.players-button {
   margin-bottom: 180px;
 }
 
-a.footer-brand{
-  color: white;
-}
-
-.menu-footer{
-  display: flex;
-  height: 141.143px;
-  align-items: flex-start;
-  gap: 219px;
-  flex-shrink: 0;
-  justify-content: center;
-}
-
-.inside-menu-footer{
+section.useful-items {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.inside-menu-footer li a {
-  color: #FFF;
-  font-family: 'Be Vietnam', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.footer-deep{
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  height: 247px;
+  gap: 45px;
 }
 
-.social-media{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 33px;
+section.useful-items div.search {
+  width: 380px;
 }
 
-.update-footer{
+div.search form {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: column;
-  gap: 80px;
-}
-
-.update-footer div {
-  display: flex;
-  justify-content: flex-end;
 
   gap: 10px;
 }
 
-.update-footer div input {
-  width: 100%;
-  border-radius: 50px;
+div.search form input {
+  flex-grow: 2;
+  border-radius: 30px;
 }
 
-.update-footer p {
+section.useful-items div.links {
+  width: 350px;
+
+  display: flex;
+  gap: 150px;
+
+  justify-content: space-around;
+}
+
+div.links ul li {
+  margin: 15px 0;
+}
+
+div.links ul li a {
   color: var(--white);
+
+  font-size: 16px;
+  font-weight: 400;
+
+  text-decoration: none;
+}
+
+section.social {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
 }
 
 /*
@@ -369,7 +364,7 @@ a.footer-brand{
   opacity: .70;
 }
 
-.primary-button.small {
+.primary-button.small-button {
   width: 60px;
   height: 45px;
 }
