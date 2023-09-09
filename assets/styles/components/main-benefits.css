@@ -1,0 +1,65 @@
+main div.benefits-container {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--secondary-color-ghost-white);
+}
+
+main div.benefits-container section.benefits {
+  width: 50%;
+
+  display: flex;
+  flex-wrap: wrap;
+  
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 60px 0;
+}
+
+main div.benefits-container section.benefits article.benefit-card {
+  width: 530px;
+}
+
+main div.benefits-container section.benefits article.benefit-card:last-child {
+  margin-top: 60px;
+}
+
+main div.benefits-container section.benefits article.benefit-card div.benefit-card-header {
+  display: flex;
+
+  align-items: center;
+
+  border-radius: 50px 0 0 50px;
+}
+
+main div.benefits-container section.benefits div.benefit-card-header span.index {
+  padding: 15px 25px;
+  margin-right: 10px;
+
+  color: var(--white);
+  background-color: var(--primary-color-deep-lilac);
+
+  border-radius: 25px;
+}
+
+main div.benefits-container section.benefits div.benefit-card-header span.title {
+  font-size: 16px;
+  font-weight: 700;
+  
+  letter-spacing: -0.24px;
+
+  color: var(--secondary-color-space-cadet);
+}
+
+main div.benefits-container section.benefits div.benefit-card-content {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+main div.benefits-container section.benefits div.benefit-card-content p {
+  line-height: 1.5rem;
+  letter-spacing: -0.163px;
+  
+  color: var(--secondary-color-philip-silver);
+}
