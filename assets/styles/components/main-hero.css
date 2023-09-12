@@ -18,6 +18,7 @@ main section.hero div.main-description {
 }
 
 main section.hero div.main-description h1 {
+  font-size: 50px;
   font-weight: 700;
   
   text-align: right;
@@ -28,6 +29,7 @@ main section.hero div.main-description h1 {
 }
 
 main section.hero div.main-description h2 {
+  font-size: 16px;
   font-weight: 500;
   
   text-align: right;

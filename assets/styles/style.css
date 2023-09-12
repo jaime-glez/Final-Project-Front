@@ -5,161 +5,62 @@
 @import url('presets.css');
 
 /*
-  * Here we are loading the styles by element.
+  * Here we are loading the stylesheets by HTML element and by screen size..
 */
 
 @import url('./components/button.css');
+@import url('./components/mobile-button.css');
 
 /*
-  * Here we are loading the styles by component.
+  * Here we are loading the stylesheets by HTML component and by screen size.
 */
 
 @import url('./components/header.css');
+@import url('./components/mobile-header.css');
+
 @import url('./components/main-hero.css');
+@import url('./components/mobile-main-hero.css');
+
 @import url('./components/main-advert.css');
+@import url('./components/mobile-main-advert.css');
+
 @import url('./components/main-top-advert.css');
+@import url('./components/mobile-main-top-advert.css');
+
 @import url('./components/main-bot-advert.css');
+@import url('./components/mobile-main-bot-advert.css');
+
 @import url('./components/main-benefits.css');
+@import url('./components/mobile-main-benefits.css');
+
 @import url('./components/main-players.css');
+@import url('./components/mobile-main-players.css');
+
 @import url('./components/footer.css');
+@import url('./components/mobile-footer.css');
 
 /*
-  * Here we define our shared CSS classes.
+  * Here we define very, VERY specific styles with/without a media rule.
 */
 
-.desktop-hide {
+header #icon-drop-menu {
   display: none;
 }
 
-/*
-  * Here we define our media rules p/screen size.
-*/
-
 @media (max-width: 1230px) {
-  header {
-    padding: 65px;
-  }
-
-  main section.hero {
-    display: flex;
-    flex-direction: column;
-
-    align-items: flex-end;
-
-    margin: 65px 40px 40px;
-  }
-
-  section.hero div img {
-    width: 320px;
-    height: 280px;
-  }
-
-  div.main-description {
-    width: 70%;
-  }
-
-  section.top-advert div.title-advert p {
-    font-size: 36px;
-  }
-
-  .benefits {
-    margin: 0;
-  }
-
-  .hide {
+  header #main-menu {
     display: none;
   }
 
-  .players-container {
-    margin: 0 20px;
-  }
-
-  .primary-button.opaque {
-    opacity: 1;
-  }
-
-  section.advert {
-    flex-direction: column;
-    gap: 50px;
-    
-    padding: 60px;
-
-    background-color: var(--primary-color-turquoise);
-  }
-
-  section.advert div {
-    width: auto;
-    margin: 0 20px;
-  }
-
-  section.top-advert.advert {
-    padding: 60px 0;
-    align-items: flex-start;
-  }
-
-  .benefits {
-    width: 100%;
-    padding: 0;
-  }
-
-  article.benefit-card {
-    width: auto;
-
-    margin-top: 30px;
-    margin-left: 35px;
-  }
-
-  article.benefit-card div.benefit-card-header {
-    background-color: rgba(139, 72, 191, 0.30);
-  }
-
-  article.benefit-card:first-child {
-    margin-top: 65px;
-  }
-  
-  article.benefit-card:last-child {
-    margin-bottom: 65px;
-  }
-
-  section.bot-advert.advert {
-    align-items: center;
-  }
-
-  section.bot-advert .title-advert {
-    width: 325px;
-  }
-
-  section.bot-advert .title-advert p {
-    text-align: center;
-  }
-
-  .primary-button.primary-button.inverted-colours {
-    color: var(--white);
-    background-color: var(--secondary-color-space-cadet);
-  }
-
-  img.show{
+  header #icon-drop-menu {
     display: block;
   }
 
-  section.useful-items {
-    flex-direction: column;
-    align-items: center;
+  header button {
+    display: none;
   }
 
-  div.social-brand-box {
-    width: 100%;
-
-    flex-direction: column;
-    gap: 35px;
-  }
-
-  div.social-brand-box div.social {
-    width: 600px;
-  }
-
-  section.copyright {
-    width: 100%;
-    justify-content: center;
+  section.players #player-card-one, #player-card-three {
+    display: none;
   }
 }

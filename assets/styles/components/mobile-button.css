@@ -1,0 +1,10 @@
+@media (max-width: 1230px) {
+  button.primary-button.opaque {
+    opacity: 1;
+  }
+
+  button.primary-button.inverted-colours {
+    color: var(--white);
+    background-color: var(--secondary-color-space-cadet);
+  }
+}
