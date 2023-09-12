@@ -2,7 +2,8 @@
   * Here we are loading the styles of :root and body. 
 */
 
-@import url('presets.css');
+@import url('reset.css');
+@import url('preset.css');
 
 /*
   * Here we are loading the stylesheets by HTML element and by screen size..
