@@ -9,35 +9,35 @@
 */
 
 @import url('./components/button.css');
-@import url('./components/mobile-button.css');
+@import url('./components/mobile-button.css') (max-width: 1230px);
 
 /*
   * Here we are loading the stylesheets by HTML component and by screen size.
 */
 
 @import url('./components/header.css');
-@import url('./components/mobile-header.css');
+@import url('./components/mobile-header.css') (max-width: 1230px);
 
 @import url('./components/main-hero.css');
-@import url('./components/mobile-main-hero.css');
+@import url('./components/mobile-main-hero.css') (max-width: 1230px);
 
 @import url('./components/main-advert.css');
-@import url('./components/mobile-main-advert.css');
+@import url('./components/mobile-main-advert.css') (max-width: 1230px);
 
 @import url('./components/main-top-advert.css');
-@import url('./components/mobile-main-top-advert.css');
+@import url('./components/mobile-main-top-advert.css') (max-width: 1230px);
 
 @import url('./components/main-bot-advert.css');
-@import url('./components/mobile-main-bot-advert.css');
+@import url('./components/mobile-main-bot-advert.css') (max-width: 1230px);
 
 @import url('./components/main-benefits.css');
-@import url('./components/mobile-main-benefits.css');
+@import url('./components/mobile-main-benefits.css') (max-width: 1230px);
 
 @import url('./components/main-players.css');
-@import url('./components/mobile-main-players.css');
+@import url('./components/mobile-main-players.css') (max-width: 1230px);
 
 @import url('./components/footer.css');
-@import url('./components/mobile-footer.css');
+@import url('./components/mobile-footer.css') (max-width: 1230px);
 
 /*
   * Here we define very, VERY specific styles with/without a media rule.

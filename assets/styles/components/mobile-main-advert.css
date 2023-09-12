@@ -1,15 +1,13 @@
-@media (max-width: 1230px) {
-  main section.advert {
-    flex-direction: column;
-    gap: 50px;
-    
-    padding: 60px;
+main section.advert {
+  flex-direction: column;
+  gap: 50px;
   
-    background-color: var(--primary-color-turquoise);
-  }
-  
-  main section.advert div {
-    width: auto;
-    margin: 0 20px;
-  }
+  padding: 60px;
+
+  background-color: var(--primary-color-turquoise);
+}
+
+main section.advert div {
+  width: auto;
+  margin: 0 20px;
 }
