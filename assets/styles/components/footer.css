@@ -1,0 +1,86 @@
+footer {
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-around;
+  
+  gap: 25px;
+  
+  padding: 40px 0;
+
+  color: var(--secondary-color-philip-silver);
+  background-color: var(--secondary-color-raisin-black);
+}
+
+footer section.useful-items {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row-reverse;
+  
+  justify-content: space-evenly;
+  
+  gap: 45px;
+}
+
+footer section.useful-items div.search {
+  width: 380px;
+}
+
+footer section.useful-items div.search form {
+  display: flex;
+
+  gap: 10px;
+}
+
+footer section.useful-items div.search form input {
+  flex-grow: 2;
+  border-radius: 30px;
+}
+
+footer section.useful-items div.links {
+  width: 350px;
+
+  display: flex;
+  justify-content: space-around;
+
+  gap: 150px;
+}
+
+footer section.useful-items div.links ul li {
+  margin: 15px 0;
+}
+
+footer section.useful-items div.links ul li a {
+  font-weight: 400;
+  
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+footer div.social-brand-box {
+  display: flex;
+  gap: 80px;
+  flex-direction: column-reverse;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer div.social-brand-box div.social {
+  width: 150px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+footer section.copyright {
+  width: 69.5%;
+
+  display: flex;
+  justify-content: flex-end;
+}

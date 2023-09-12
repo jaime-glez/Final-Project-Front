@@ -1,0 +1,29 @@
+button.primary-button {
+  width: 135px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  font-family: 'Be Vietnam Pro', sans-serif;
+
+  color: var(--secondary-color-ghost-white);
+  background-color: var(--primary-color-deep-lilac);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+button.primary-button.opaque {
+  opacity: .70;
+}
+
+button.primary-button.small-button {
+  width: 60px;
+  height: 45px;
+}
+
+button.primary-button.inverted-colours {
+  color: var(--primary-color-deep-lilac);
+  background-color: var(--secondary-color-ghost-white);
+}

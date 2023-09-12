@@ -1,0 +1,13 @@
+main section.advert.bot-advert {
+  align-items: center;
+
+  gap: 50px;
+}
+
+main section.advert.bot-advert div.title-advert {
+  width: 325px;
+}
+
+main section.advert.bot-advert div.title-advert p {
+  text-align: center;
+}

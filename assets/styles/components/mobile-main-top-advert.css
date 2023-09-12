@@ -1,0 +1,11 @@
+main section.advert.top-advert {
+  align-items: flex-start;
+  
+  gap: 50px;
+  
+  padding: 60px 0;
+}
+
+main section.advert.top-advert div.title-advert p {
+  font-size: 36px;
+}

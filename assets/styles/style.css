@@ -1,524 +1,66 @@
-:root { 
-  --white: #FFF;
-  --black: #000;
-
-  --primary-color-turquoise: #3CDDF3;
-  --primary-color-deep-lilac: #8B48BF;
-
-  --secondary-color-ghost-white: #F9F9F9;
-  --secondary-color-space-cadet: #232851;
-  --secondary-color-raisin-black: #1E1E26;
-  --secondary-color-grey: #B3B2B7;
-}
-
-body {
-  font-family: 'Be Vietnam Pro', sans-serif;
-}
-
 /*
-  * Here we define our specific styles by HTML tag.
+  * Here we are loading the styles of :root and body. 
 */
 
-header {
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 65px 165px;
-}
-
-header nav {
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 30px;
-}
-
-header nav a {
-  color: var(--secondary-color-space-cadet);
-  text-decoration: none;
-}
-
-header button {
-  width: 135px;
-  height: 45px;
-
-  border-radius: 50px;
-
-  background-color: var(--primary-color-deep-lilac);
-  color: var(--secondary-color-ghost-white);
-}
-
-footer{
-  height: 450px;
-
-  padding: 40px 0;
-
-  display: flex;
-  gap: 25px;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: space-around;
-  
-  color: var(--secondary-color-grey);
-  background-color: var(--secondary-color-raisin-black);
-}
+@import url('presets.css');
 
 /*
-  * Here we define our specific styles by HTML tag with CSS class selector(s).
+  * Here we are loading the stylesheets by HTML element and by screen size..
 */
 
-section.hero {
-  display: inline-flex;
-
-  align-items: center;
-  
-  gap: 100px;
-
-  margin: 95px 180px;
-}
-
-section.hero div.main-description {
-  display: flex;
-  
-  flex-direction: column;
-  align-items: flex-end; 
-  
-  gap: 28px;
-}
-
-div.main-description h1 {
-  color: var(--secondary-color-space-cadet);
-
-  text-align: right;
-  line-height: 3.5rem;
-  letter-spacing: -1.75px;
-  
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-div.main-description h2 {
-  color: var(--black);
-
-  text-align: right;
-  line-height: 1.5rem;
-
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-}
-
-section.advert div {
-  width: 450px;
-  color: var(--white);
-}
-
-section.top-advert {
-  padding: 40px 0;
-
-  gap: 100px;
-}
-
-div.title-advert p {
-  font-size: 35px;
-  font-weight: 700;
-  
-  line-height: 2.5rem;
-}
-
-div.description-advert p {
-  font-weight: 400;
-  line-height: 1.5rem;
-}
-
-section.bot-advert {
-  padding: 60px 0;
-
-  gap: 538px;
-}
-
-section.bot-advert div.title-advert p {
-  font-size: 40px;
-  font-weight: 700;
-
-  line-height: 3.5rem;
-}
-
-.benefits-container {
-  display: flex;
-  justify-content: center;
-
-  background-color: var(--secondary-color-ghost-white);
-}
-
-.benefits {
-  width: 50%;
-
-  display: flex;
-  flex-wrap: wrap;
-  
-  align-items: center;
-  justify-content: space-around;
-
-  padding: 60px 0;
-}
-
-article.benefit-card {
-  width: 530px;
-}
-
-article.benefit-card:last-child {
-  margin-top: 60px;
-}
-
-article.benefit-card div.benefit-card-header {
-  display: flex;
-
-  align-items: center;
-
-  border-radius: 50px 0 0 50px;
-}
-
-div.benefit-card-header span.index {
-  padding: 15px 25px;
-  margin-right: 10px;
-
-  color: var(--white);
-  background-color: var(--primary-color-deep-lilac);
-
-  border-radius: 25px;
-}
-
-div.benefit-card-header span.title {
-  font-size: 16px;
-  font-weight: 700;
-  
-  letter-spacing: -0.24px;
-
-  color: var(--secondary-color-space-cadet);
-}
-
-div.benefit-card-content {
-  margin-top: 30px;
-  margin-right: 30px;
-}
-
-div.benefit-card-content p {
-  line-height: 1.5rem;
-  letter-spacing: -0.163px;
-  
-  color: var(--secondary-color-grey);
-}
-
-.players h3 {
-  margin: 100px 0;
-
-  text-align: center;
-  letter-spacing: -0.392px;
-  
-  font-size: 39.214px;
-  font-weight: 700;
-  line-height: 3.75rem;
-
-  color: var(--secondary-color-space-cadet);
-}
-
-.players-container {
-  display: flex;
-  flex-wrap: wrap;
-
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--secondary-color-ghost-white);
-}
-
-.card {
-  width: 450px;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  gap: 20px;
-
-  margin: 0 50px 20px;
-}
-
-.card img {
-  position: relative;
-  top: -35px;
-}
-
-.card p {
-  color: var(--secondary-color-grey);
-  text-align: center;
-  line-height: 1.5rem;
-
-  margin-bottom: 15px;
-}
-
-div.players-button {
-  display: flex;
-  justify-content: center;
-
-  margin-top: 45px;
-  margin-bottom: 180px;
-}
-
-section.useful-items {
-  width: 100%;
-
-  display: flex;
-  gap: 45px;
-  flex-direction: row-reverse;
-  
-  justify-content: space-evenly;
-}
-
-section.useful-items div.search {
-  width: 380px;
-}
-
-div.search form {
-  display: flex;
-
-  gap: 10px;
-}
-
-div.search form input {
-  flex-grow: 2;
-  border-radius: 30px;
-}
-
-section.useful-items div.links {
-  width: 350px;
-
-  display: flex;
-  gap: 150px;
-
-  justify-content: space-around;
-}
-
-div.links ul li {
-  margin: 15px 0;
-}
-
-div.links ul li a {
-  color: var(--white);
-
-  font-size: 16px;
-  font-weight: 400;
-
-  text-decoration: none;
-}
-
-div.social-brand-box {
-  display: flex;
-  gap: 80px;
-  flex-direction: column-reverse;
-
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-div.social-brand-box  div.social {
-  width: 150px;
-
-  display: flex;
-  justify-content: space-around;
-}
-
-section.copyright {
-  width: 69.5%;
-
-  display: flex;
-  justify-content: flex-end;
-}
+@import url('./components/button.css');
+@import url('./components/mobile-button.css') (max-width: 1230px);
 
 /*
-  * Here we define our shared CSS classes.
+  * Here we are loading the stylesheets by HTML component and by screen size.
 */
 
-.advert {
-  display: flex;
-  
-  align-items: center;
-  justify-content: space-evenly;
+@import url('./components/header.css');
+@import url('./components/mobile-header.css') (max-width: 1230px);
 
-  background-color: var(--primary-color-deep-lilac);
-}
+@import url('./components/main-hero.css');
+@import url('./components/mobile-main-hero.css') (max-width: 1230px);
 
-.primary-button {
-  width: 135px;
-  height: 45px;
+@import url('./components/main-advert.css');
+@import url('./components/mobile-main-advert.css') (max-width: 1230px);
 
-  border: none;
-  border-radius: 50px;
+@import url('./components/main-top-advert.css');
+@import url('./components/mobile-main-top-advert.css') (max-width: 1230px);
 
-  cursor: pointer;
+@import url('./components/main-bot-advert.css');
+@import url('./components/mobile-main-bot-advert.css') (max-width: 1230px);
 
-  font-family: 'Be Vietnam Pro', sans-serif;
+@import url('./components/main-benefits.css');
+@import url('./components/mobile-main-benefits.css') (max-width: 1230px);
 
-  color: var(--secondary-color-ghost-white);
-  background-color: var(--primary-color-deep-lilac);
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
-}
+@import url('./components/main-players.css');
+@import url('./components/mobile-main-players.css') (max-width: 1230px);
 
-.primary-button.inverted-colours {
-  color: var(--primary-color-deep-lilac);
-  background-color: var(--secondary-color-ghost-white);
-}
+@import url('./components/footer.css');
+@import url('./components/mobile-footer.css') (max-width: 1230px);
 
-.primary-button.opaque {
-  opacity: .70;
-}
+/*
+  * Here we define very, VERY specific styles with/without a media rule.
+*/
 
-.primary-button.small-button {
-  width: 60px;
-  height: 45px;
-}
-
-.desktop-hide{
+header #icon-drop-menu {
   display: none;
 }
 
-/*
-  * Here we define our media rules p/screen size.
-*/
-
 @media (max-width: 1230px) {
-  header {
-    padding: 65px;
-  }
-
-  section.hero {
-    display: flex;
-    flex-direction: column;
-
-    align-items: flex-end;
-
-    margin: 65px 40px 40px;
-  }
-
-  section.hero div img {
-    width: 400px;
-    height: 340px;
-  }
-
-  div.main-description {
-    width: 70%;
-  }
-
-  section.top-advert div.title-advert p {
-    font-size: 36px;
-  }
-
-  .benefits {
-    margin: 0;
-  }
-
-  .hide {
+  header #main-menu {
     display: none;
   }
 
-  .players-container {
-    margin: 0 20px;
-  }
-
-  .primary-button.opaque {
-    opacity: 1;
-  }
-
-  section.advert {
-    flex-direction: column;
-    gap: 50px;
-    
-    padding: 60px;
-
-    background-color: var(--primary-color-turquoise);
-  }
-
-  section.advert div {
-    width: auto;
-    margin: 0 20px;
-  }
-
-  section.top-advert.advert {
-    padding: 60px 0;
-    align-items: flex-start;
-  }
-
-  .benefits {
-    width: 100%;
-    padding: 0;
-  }
-
-  article.benefit-card {
-    width: auto;
-
-    margin-top: 30px;
-    margin-left: 50px;
-  }
-
-  article.benefit-card div.benefit-card-header {
-    background-color: rgba(139, 72, 191, 0.30);
-  }
-
-  article.benefit-card:first-child {
-    margin-top: 65px;
-  }
-  
-  article.benefit-card:last-child {
-    margin-bottom: 65px;
-  }
-
-  section.bot-advert.advert {
-    align-items: center;
-  }
-
-  section.bot-advert .title-advert {
-    width: 325px;
-  }
-
-  section.bot-advert .title-advert p {
-    text-align: center;
-  }
-
-  .primary-button.primary-button.inverted-colours {
-    color: var(--white);
-    background-color: var(--secondary-color-space-cadet);
-  }
-
-  img.show{
+  header #icon-drop-menu {
     display: block;
   }
 
-  section.useful-items {
-    flex-direction: column;
-    align-items: center;
+  header button {
+    display: none;
   }
 
-  div.social-brand-box {
-    width: 100%;
-
-    flex-direction: column;
-    gap: 35px;
-  }
-
-  div.social-brand-box div.social {
-    width: 600px;
-  }
-
-  section.copyright {
-    width: 100%;
-    justify-content: center;
+  section.players #player-card-one, #player-card-three {
+    display: none;
   }
 }

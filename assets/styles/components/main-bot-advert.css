@@ -1,0 +1,12 @@
+main section.bot-advert {
+  padding: 60px 0;
+
+  gap: 538px;
+}
+
+main section.bot-advert div.title-advert p {
+  font-size: 40px;
+  font-weight: 700;
+
+  line-height: 3.5rem;
+}

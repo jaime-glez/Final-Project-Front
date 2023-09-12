@@ -1,0 +1,17 @@
+main section.hero {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  margin: 65px 40px 40px;
+}
+
+main section.hero div img {
+  width: 320px;
+  height: 280px;
+}
+
+main section.hero div.main-description {
+  width: 70%;
+}
